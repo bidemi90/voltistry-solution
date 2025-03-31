@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About us</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="./index.js"></script>
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="custom-nav">
+      <nav class="custom-navbar">
+        <div class="custom-container">
+          <img class="custom-brand" src="./images/logo.png" alt="" />
+          <button
+            class="custom-toggler"
+            type="button"
+            aria-label="Toggle navigation"
+          >
+            <span class="custom-toggler-icon"></span>
+          </button>
+          <div class="custom-nav-collapse">
+            <ul class="custom-nav-list">
+              <li class="custom-nav-item">
+                <a class="custom-nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="custom-nav-item">
+                <a class="custom-nav-link" href="./evphev.html">ev& phev</a>
+              </li>
+              <li class="custom-nav-item">
+                <a class="custom-nav-link" href="./comparison.html"
+                  >comparison</a
+                >
+              </li>
+              <li class="custom-nav-item">
+                <a class="custom-nav-link" href="./Charging_Infrastructure.html"
+                  >charging infarstructure</a
+                >
+              </li>
+              <li class="custom-nav-item">
+                <a class="custom-nav-link" href="./aboutus.html">about us</a>
+              </li>
+              <li class="custom-nav-item">
+                <a class="custom-nav-link" href="./contactus.html"
+                  >contact us</a
+                >
+              </li>
+            </ul>
+            <ul class="custom-nav-list">
+              <li class="custom-nav-item">
+                <button class="custom-btn custom-btn-outline">
+                  <a class="custom-btn-outline-link" href="./signup.html"
+                    >sign up</a
+                  >
+                </button>
+              </li>
+              <li class="custom-nav-item">
+                <button class="custom-btn custom-btn-primary">
+                  <a class="custom-btn-link" href="./login.html">Log In</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--  -->
+
+    <!--  -->
+
+    <section class="about-section" id="about-section">
+      <div class="container">
+        <div class="about-header">
+          <h2 class="about-heading">Our Mission</h2>
+          <p class="about-sub-heading">
+            At Voltistry Solutions, we are dedicated to accelerating the
+            transition to electric mobility. Through education, innovation, and
+            user-friendly solutions, we empower individuals and businesses to
+            embrace EVs and PHEVs for a greener future.
+          </p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h4 class="about-title">
+              The Future of Sustainable Transportation
+            </h4>
+            <p class="about-description">
+              As the world shifts towards sustainability, electric and hybrid
+              vehicles are at the forefront of innovation. Voltistry Solutions
+              provides the knowledge and resources needed to make informed
+              decisions, helping users transition smoothly into eco-friendly
+              transportation.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="./images/staction.png" alt="EV Charging Station" />
+          </div>
+        </div>
+        <div class="about-content reverse">
+          <div class="about-text">
+            <h4 class="about-title">
+              Empowering the Next Generation of Drivers
+            </h4>
+            <p class="about-description">
+              At Voltistry Solutions, we believe education is the key to
+              widespread EV adoption. We provide interactive tools, comparisons,
+              and guides to help both new and experienced drivers understand the
+              benefits of electric and hybrid vehicles.
+            </p>
+          </div>
+          <div class="about-image">
+            <img
+              src="./images/edu aboutus.jpg"
+              alt="EV Educational Resources"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <!-- Footer Section -->
+    <section class="copyright-section">
+      <div class="container">
+        <div class="copyright-content">
+          <!-- Logo & Copyright -->
+          <div class="copyright-logo">
+            <img
+              src="./images/logo.png"
+              alt="Voltistry Solutions Logo"
+            />
+            <p class="copyright-text">
+              &#169; 2025 Voltistry Solutions. All Rights Reserved.
+            </p>
+          </div>
+
+          <!-- Footer Description -->
+          <p class="copyright-description">
+            Voltistry Solutions is committed to making electric mobility
+            accessible and sustainable. Join us in the journey towards a
+            cleaner, smarter future with electric and hybrid vehicles.
+          </p>
+
+          <!-- Quick Links -->
+          <ul class="footer-links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./evphev.html">EV & PHEV</a></li>
+            <li><a href="./comparison.html">Comparison</a></li>
+            <li>
+              <a href="charging-infrastructure.html">Charging Infrastructure</a>
+            </li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./contactus.html">Contact Us</a></li>
+          </ul>
+
+          <!-- Social Media Links -->
+          <ul class="social-links">
+            <li>
+              <a href="https://www.facebook.com"
+                ><i class="fab fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+<script>
+  document
+    .querySelector(".custom-toggler")
+    .addEventListener("click", function () {
+      const navCollapse = document.querySelector(".custom-nav-collapse");
+      const togglerIcon = document.querySelector(".custom-toggler-icon");
+
+      navCollapse.classList.toggle("active");
+      this.classList.toggle("active");
+
+      // Toggle body overflow to prevent scrolling when menu is open
+      if (navCollapse.classList.contains("active")) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    });
+</script>
